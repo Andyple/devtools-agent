@@ -1,0 +1,33 @@
+# ─── Terraform ───────────────────────────────
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/*.tfstate
+infra/*.tfstate.*
+infra/*.tfvars
+infra/*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+
+# ─── Secrets / credentials ───────────────────
+.env
+.env.*
+*.pem
+credentials
+
+# ─── Python ──────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ─── Corpus (cloned LangChain docs) ──────────
+corpus/
+
+# ─── OS / editor cruft ───────────────────────
+.DS_Store
+*.swp
